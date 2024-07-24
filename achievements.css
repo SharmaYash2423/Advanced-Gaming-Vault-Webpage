@@ -1,0 +1,50 @@
+.parallax {
+    background-image: url('https://t3.ftcdn.net/jpg/07/52/37/60/360_F_752376059_HwUxL1NTWhFxZvqMIBmCsE2c60455jCj.jpg');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero {
+    padding: 100px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: -50px;
+}
+
+.achievements {
+    padding: 50px 0;
+}
+
+.achievement-box {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #ffdd57;
+}
+    
+.nav-link:active {
+    color: #ffc107;
+}
+    
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    .hero {
+        padding: 50px 0;
+    }
+
+    .achievement-box {
+        margin: 20px 0;
+    }
+}

@@ -1,0 +1,103 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+    
+.hero {
+    background-image: url("https://media.istockphoto.com/id/1311350206/photo/gamer-room.jpg?s=612x612&w=0&k=20&c=XqBOGmwkP3E_D4yBvqC2yN6-yg6NyidmPRHnqFG0Ncs=");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    padding: 100px 0;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+    
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+    
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+    
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+    
+.activity {
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.activity img {
+    width: 100%;
+    height: auto;
+}
+    
+.activity:hover {
+    transform: translateY(-10px);
+    background-color: #f8f9fa;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+    
+.activity h2 {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+    
+.activity p {
+    font-size: 1rem;
+    color: #555;
+}
+    
+.activity:nth-child(even) {
+    background-color: #f7f9fa;
+}
+    
+.nav-link:hover,
+.nav-link:focus {
+    color: #ffdd57;
+}
+    
+.nav-link:active {
+    color: #ffc107;
+}
+    
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+    
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+    }
+    
+    .activities-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .activity {
+        margin: 0 auto;
+        width: 80%;
+    }
+}

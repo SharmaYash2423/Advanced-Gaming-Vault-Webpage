@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Gaming Vault - Contact Us</title>
+</head>
+<body>
+  <header>
+    <nav class="navigation-bar">
+      <h1 class="game-vault-heading">GamE VaulT</h1>
+      <div class="nav-links">
+        <button><a href="./GameVault.html">Home</a></button>
+        <button><a href="./About.html">About Us</a></button>
+        <button><a href="./Activities.html">Activities</a></button>
+        <button><a href="./Achievements.html">Achievements</a></button>
+        <button class="active"><a href="#">Contact Us</a></button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="flex-container">
+      <section class="contact-us">
+        <div class="text">
+          <h2>Get in Touch</h2>
+          <p>We're always happy to hear from you! Whether you have a question, feedback, or suggestion, feel free to reach out using the form attached on right of this block or any of the methods listed.</p>
+        </div>
+
+        <form action="mailto:contact@gamingvault.com" method="post" id="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Feedback:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" id="submit-button">Send Feedback</button>
+        </form>
+
+        <aside>
+          <div class="contact-info">
+            <h2>Alternatively, you can reach us at:</h2>
+            <ul>
+              <li><b>Email:</b><br><a href="mailto:contact@gamingvault.com">contact@gamingvault.com</a></li>
+              <li><b>Phone:</b><br>+91 88-88888888</li>
+              <li><b>Social Media:</b></li>
+              <ul class="social-icons">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Discord</a></li>
+              </ul>
+            </ul>
+          </div>
+        </aside>
+      </section>
+    </div>
+  </main>
+  <footer class="bottom">
+    <p>&copy; Gaming Vault 2024. All Rights Reserved.</p>
+  </footer>
+  <script>
+    const submitButton = document.getElementById('submit-button');
+    const contactForm = document.getElementById('contact-form');
+
+    submitButton.addEventListener('click', (event) => {
+      event.preventDefault();
+      if (validateForm()) {
+        alert("Your feedback is recorded. We respect the feedback provided by you. Thank you.");
+        contactForm.reset();
+      }
+    });
+
+    function validateForm() {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      if (!name) {
+        alert('Invalid input: Name is required.');
+        return false;
+      }
+
+      if (!email.includes('@') || !email.includes('.')) {
+        alert('Invalid input: Please enter a valid email.');
+        return false;
+      }
+
+      if (!message) {
+        alert('Invalid input: Message is required.');
+        return false;
+      }
+
+      return true;
+    }
+  </script>
+</body>
+</html>

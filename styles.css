@@ -1,0 +1,247 @@
+body {
+    background: url("./images/community.jpg") no-repeat center fixed;
+    background-size: cover;
+    background-color: black;
+    opacity: 0.8;
+    margin: 0;
+} 
+
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c2c2c;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.navigation-bar .nav-links {
+    display: flex;
+    margin-left: 30px;
+}
+  
+.navigation-bar .nav-links button {
+    background-color: #000; /* Set initial button color to black */
+    color: #fff; /* Set initial text color to white */
+    margin-right: 30px;
+    padding: 10px 30px; /* Add padding for better visibility */
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.navigation-bar .nav-links button a {
+    color: inherit;
+    text-decoration: none;
+}
+  
+.navigation-bar .nav-links button:hover {
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.game-vault-heading {
+    font-family: 'Georgia', sans-serif;
+    font-size: 2.5em;
+    color: #8029c8; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    font-weight: 700; 
+    letter-spacing: 10px; 
+    font-style: italic;
+}
+
+.flex-container{
+    margin-top: 80px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
+.flex-container2 {
+    margin-top: 80px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.about-us {
+    margin-bottom: 10px;
+    border: 2px solid #8029c8;
+    border-radius: 5px;
+    background-color: skyblue;
+    padding: 15px;
+}
+
+.team {
+    margin-bottom: 10px;
+    border: 2px solid #8029c8;
+    border-radius: 5px;
+    background-color: skyblue;
+    padding: 15px;
+}
+
+aside {
+    margin-bottom: 10px;
+    border: 2px solid #8029c8;
+    border-radius: 5px;
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: lightgray;
+}
+
+.flex-items{
+    margin-bottom: 10px;
+    border: 2px solid #8029c8;
+    border-radius: 5px;
+    background-color: skyblue;
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    width: 30%;
+    box-sizing: border-box;
+    flex-direction: column;
+    text-align: center;
+}
+
+.flex-items img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.flex-items:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.flex-items h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+.flex-items p {
+    margin-top: 10px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.text-description {
+    text-align: justify; 
+    margin-bottom: 10px; 
+    font-size: 16px; 
+    line-height: 1.5; 
+    color: #333; 
+  }
+  
+.text-description h2 {
+    font-size: 1.8em; 
+    margin-bottom: 5px;
+}
+
+figcaption{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    background-color: #8029c8;
+    color: white;
+    display: block;
+    margin-top: auto;
+    height: auto;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+    text-decoration: underline;
+}
+  
+main {
+    padding: 20px;
+}
+  
+section {
+    margin-bottom: 20px;
+}
+  
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+  
+p {
+    line-height: 1.5;
+}
+
+form {
+    margin-bottom: 10px;
+    border: 2px solid #8029c8;
+    border-radius: 5px;
+    background-color: skyblue;
+    padding: 15px;
+}
+
+.contact-us {
+    display: flex;
+    justify-content: space-around; 
+    width: 80%; 
+    margin: 0 auto; 
+}
+
+.text {
+    margin-bottom: 10px;
+    border: 2px solid #8029c8;
+    border-radius: 5px;
+    background-color: skyblue;
+    padding: 15px;
+}
+
+.contact-info {
+    margin-left: 15px;
+    text-align: right;
+    width: 80%; 
+}
+  
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.bottom {
+    text-align: center;
+    background-color: #8029c8;
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    position: fixed;
+    bottom: 0;
+    height: auto;
+    width: 100%;    
+}
+
+.about-us img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
